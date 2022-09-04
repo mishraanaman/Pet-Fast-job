@@ -2,14 +2,15 @@ FROM node:lts-alpine
 
 WORKDIR /app 
 
-COPY . .
+COPY package.json .
 
 RUN npm install --only=production
 
+COPY . .
+
 USER node
 
-RUN npm build --prefix src
-
-CMD [ "npm", "start", "prefix", "src" ]
-
 EXPOSE 8000
+
+CMD [ "node", "src/server.js"]
+
