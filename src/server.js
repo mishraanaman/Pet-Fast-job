@@ -1,7 +1,5 @@
 console.log("*----  Welcome to Pet Management Solution ---*");
 
-const {loadPetsData} = require("./models/pets.model.js");
-
 const http = require("http");
 const mongoose = require("mongoose");
 require("dotenv").config();
@@ -21,8 +19,6 @@ mongoose.connection.on("error", (err) => {
 async function startServer() {
   mongoose.set('strictQuery', false);
   await mongoose.connect(MONGO_URL);
-
-  await loadPetsData();
 
   server.listen(PORT, () => {
     console.log(`Listening on port ${PORT}...`);
