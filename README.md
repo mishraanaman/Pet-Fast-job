@@ -17,21 +17,20 @@ The codebase follows a strict separation of concerns, ensuring that the controll
 
 To start the project, follow these steps:
 
-1. Clone the repository to your local machine: 
-`git clone https://github.com/your-username/your-repo.git`
+1. Clone the repository to your local machine:`git clone https://github.com/your-username/your-repo.git`
 
 
-2. Navigate to the project directory: cd Pet-Fast-job
+2. Navigate to the project directory: `cd Pet-Fast-job`
 
 
-3. Install the dependencies: npm install
+3. Install the dependencies: `npm install`
 
 
 4. Create a [`.env`] file in the root directory of the project and add the necessary environment variables. 
 For example: PORT=3000 SECRET_KEY="sfhvhvhfjfjjsgfgdfgdf" MONGODB_URL=mongodb://localhost:27017/mydatabase api='HxgWJhvhgGBln3lEF'
 
 
-5. Start the server: npm start
+5. Start the server: `npm start`
 
 
 6. You should see a message indicating that the server is running on the specified port.
