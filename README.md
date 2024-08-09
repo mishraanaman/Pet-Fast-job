@@ -63,84 +63,68 @@ Copy the JWT token generated from the Login API and add that to the API header a
 Authorization: Bearer <token>
 
 1. Fetch All Pets
-Endpoint:
+Endpoint: `GET /pets/`
 
-GET /pets/
-Description:
+Description: Retrieves a list of all pets.
 
-Retrieves a list of all pets.
-Headers:
-
-Authorization: Bearer <token> 
+Headers: `Authorization: Bearer <token> `
 
 
 2. Fetch Pet by ID
-Endpoint:
+Endpoint: `GET /pets/:id`
 
-GET /pets/:id
-Description:
+Description: Retrieves a specific pet by its ID.
 
-Retrieves a specific pet by its ID.
-Headers:
+Headers:`Authorization: Bearer <token>`
 
-Authorization: Bearer <token>
-Path Parameters:
-
-id: The unique ID of the pet.
+Path Parameters: id: The unique ID of the pet.
 
 
 
 3. Create a New Pet
-Endpoint:
+Endpoint: `POST /pets/`
 
-POST /pets/
-Description:
+Description: Creates a new pet entry.
 
-Creates a new pet entry.
-Headers:
+Headers: `Authorization: Bearer <token>`
 
-Authorization: Bearer <token>
-Content-Type: application/json
+Content-Type: `application/json`
+
 Request Body:
-
+`
 {
   "name": "Buddy",
   "type": "Dog",
   "age": 5
 }
+`
 
 4. Update Pet by ID
-Endpoint:
 
-PATCH /pets/:id
-Description:
+Endpoint: `PATCH /pets/:id`
 
-Updates the information of a specific pet.
-Headers:
+Description: Updates the information of a specific pet.
 
-Authorization: Bearer <token>
-Content-Type: application/json
-Path Parameters:
+Headers: `Authorization: Bearer <token>`
 
-id: The unique ID of the pet.
+Content-Type: `application/json`
+
+Path Parameters: id: The unique ID of the pet.
+
 Request Body (Partial or Full Update):
 
-{
+`{
   "name": "Buddy",
   "type": "Dog",
   "age": 6
-}
+}`
 
 5. Remove Pet by ID
-Endpoint:
 
-DELETE /pets/:id
-Description:
+Endpoint: `DELETE /pets/:id`
 
-Deletes a specific pet by its ID.
-Headers:
+Description: Deletes a specific pet by its ID.
 
-Authorization: Bearer <token>
-Path Parameters:
+Headers: `Authorization: Bearer <token>`
 
-id: The unique ID of the pet.
+Path Parameters: id: The unique ID of the pet.
