@@ -13,3 +13,25 @@ To enhance the security of our APIs, we have implemented Helmet.js and CORS, whi
 
 The codebase follows a strict separation of concerns, ensuring that the controller, business logic, and data access layers are properly organized and decoupled.
 
+## How to Start the Project
+
+To start the project, follow these steps:
+
+1. Clone the repository to your local machine: git clone https://github.com/your-username/your-repo.git
+
+
+2. Navigate to the project directory: cd Pet-Fast-job
+
+
+3. Install the dependencies: npm install
+
+
+4. Create a [`.env`] file in the root directory of the project and add the necessary environment variables. 
+For example: PORT=3000 SECRET_KEY="sfhvhvhfjfjjsgfgdfgdf" MONGODB_URL=mongodb://localhost:27017/mydatabase api='HxgWJhvhgGBln3lEF'
+
+
+5. Start the server: npm start
+
+
+6. You should see a message indicating that the server is running on the specified port.
+
