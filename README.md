@@ -27,12 +27,11 @@ To start the project, follow these steps:
 
 
 4. Create a [`.env`] file in the root directory of the project and add the environment variables mentioned below
-`PORT=3000`
-port where you wish to host the app
-`SECRET_KEY="sfhvhvhfjfjjsgfgdfgdf" `
-a random secret key for auth token generation
-`MONGODB_URL=mongodb://localhost:27017/mydatabase'`
-your MONGODB Atlas connection string
+`PORT=3000` port where you wish to host the app
+
+`SECRET_KEY="sfhvhvhfjfjjsgfgdfgdf" ` random secret key for auth token generation
+
+`MONGODB_URL=mongodb://localhost:27017/mydatabase'` your MONGODB Atlas connection string
 
 
 5. Start the server: `npm start`
@@ -44,7 +43,8 @@ your MONGODB Atlas connection string
 7. Authenticate your CRUD APIs by calling the Login API first using any API Client
 ### Login URL
 
-POST: `localhost:<PORT>/v1/login/`
+Endpoint `POST: localhost:<PORT>/v1/login/`
+
 Request Body: 
 `{
   "username": "admin",
