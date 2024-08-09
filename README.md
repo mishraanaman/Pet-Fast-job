@@ -1,4 +1,15 @@
-These are a set of APIs that are developed using the Express framework. I have used this framework due to its robust routing and great support for middlewares. Node.js’ non-blocking input/output operations and the fact that it interprets JS code through the V8 JS engine are the reasons why Express apps are fast.
-Along with that I have used Mongo DB as the database as it is a fully-managed cloud database that handles all the complexity of deploying, managing, and healing your deployments on the cloud service provider of your choice (AWS , Azure, and GCP). 
-I have used Helmet.js and CORS to provide extra security to our APIs from scripting attacks.
-Separation of concerns is strictly followed while making these APIs, as a result the controller, business and DAO layer are carefully separated.
+# Pet Fast Job
+
+## APIs using Express + MongoDB
+
+
+## Features
+
+These APIs are developed using the Express framework, known for its robust routing and excellent support for middlewares. The choice of Express was driven by Node.js' non-blocking input/output operations and its use of the V8 JS engine, which contribute to the fast performance of Express apps.
+
+MongoDB is used as the database for these APIs. It is a fully-managed cloud database that simplifies the deployment, management, and scalability of your database on popular cloud service providers like AWS, Azure, and GCP.
+
+To enhance the security of our APIs, we have implemented Helmet.js and CORS, which provide protection against scripting attacks.
+
+The codebase follows a strict separation of concerns, ensuring that the controller, business logic, and data access layers are properly organized and decoupled.
+
