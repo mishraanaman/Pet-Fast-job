@@ -17,8 +17,8 @@ The codebase follows a strict separation of concerns, ensuring that the controll
 
 To start the project, follow these steps:
 
-1. Clone the repository to your local machine: git clone
-[https://github.com/your-username/your-repo.git]
+1. Clone the repository to your local machine: 
+`git clone https://github.com/your-username/your-repo.git`
 
 
 2. Navigate to the project directory: cd Pet-Fast-job
