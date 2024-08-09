@@ -19,6 +19,7 @@ mongoose.connection.on("error", (err) => {
 });
 
 async function startServer() {
+  mongoose.set('strictQuery', false);
   await mongoose.connect(MONGO_URL);
 
   await loadPetsData();
