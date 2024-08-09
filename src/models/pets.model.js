@@ -8,7 +8,7 @@ const { parse } = require("csv-parse");
 function loadPetsData() {
   return new Promise((resolve, reject) => {
     fs.createReadStream(
-      path.join(__dirname, "..", "..", "data", "pets_test.csv")
+      path.join(__dirname, "..", "..", "sample_data", "pets_test.csv")
     )
       .pipe(
         parse({
