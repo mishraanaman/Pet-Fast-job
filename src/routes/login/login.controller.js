@@ -5,7 +5,7 @@ class HandlerGenerator {
   login(req, res) {
     let username = req.body.username;
     let password = req.body.password;
-    // For the given username fetch user from DB
+    /* TODO: Fetch the login details from DB instead of hardcoding*/
     let mockedUsername = "admin";
     let mockedPassword = "password";
 
@@ -22,13 +22,13 @@ class HandlerGenerator {
           token: token,
         });
       } else {
-        res.send(403).json({
+        res.status(403).json({
           success: false,
           message: "Incorrect username or password",
         });
       }
     } else {
-      res.send(400).json({
+      res.status(400).json({
         success: false,
         message: "Authentication failed! Please check the request",
       });
