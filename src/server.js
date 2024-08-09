@@ -1,4 +1,4 @@
-console.log("----  Welcome to Fast Jobs Assignment ----");
+console.log("*----  Welcome to Pet Management Solution ---*");
 
 const {loadPetsData} = require("./models/pets.model.js");
 

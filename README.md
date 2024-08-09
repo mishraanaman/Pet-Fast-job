@@ -1,6 +1,6 @@
-# Pet Fast Job
+# Pet Shop Management
 
-## APIs using Express + MongoDB
+## APIs using Express + MongoDB Atlas
 
 
 ## Features
